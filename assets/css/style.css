@@ -1,0 +1,953 @@
+/* CSS BLOG ECRIVAN */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+/*HEADER */
+#image-title {
+    padding: 0;
+    margin: 0;
+}
+.head-contain {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.head-contain img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.connexion-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    z-index: 9999;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 40%;
+    height: 35px;
+}
+
+.connexion-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-name {
+    color: #fff;
+    font-weight: 800;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.disconnect {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.disconnect:hover {
+    color: #311c21;
+}
+
+.sapin {
+
+    padding-right: 0;
+    text-align: right;
+}
+
+.connection {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.inscription {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.name {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+
+/*FORMULAIRE */
+#login-form {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(255,255,255, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: none;
+}
+
+#suscribe-formulaire {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(255,255,255, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: none;
+}
+
+#form {
+    position: absolute;
+    top:30%;
+    left: 35%;
+    width: 40%;
+    height: 40%;
+}
+
+.btn-badge-comment {
+    width: 25px;
+    height: 14px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #311c21;
+    background-color: #311c21;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: .8em;
+    font-weight: 800;
+    padding-bottom: 4px;
+}
+
+.badge-comment {
+    margin: 0 10px;
+}
+
+.close-form {
+    position: absolute;
+    left: 90%;
+    top: -10px;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+    color: #000000;
+}
+
+p.logo-login, p.logo-password, p.logo-email {
+    position: relative;
+}
+
+p.logo-login > i, p.logo-password > i, p.logo-email >i  {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 14px;
+    display: block;
+}
+
+
+.close-form:hover {
+    color: #311c21;
+}
+
+
+input#login{
+    width: 90%;
+    height: 35px;
+    text-align: center;
+    border:none;
+    border-bottom: 1px solid #adadad;
+}
+
+input#password {
+    width: 90%;
+    height: 35px;
+    text-align: center;
+    border:none;
+    border-bottom: 1px solid #adadad;
+}
+
+
+input#password_suscribe {
+    width: 90%;
+    height: 35px;
+    text-align: center;
+    border:none;
+    border-bottom: 1px solid #adadad;
+}
+
+input#email {
+    width: 90%;
+    height: 35px;
+    text-align: center;
+    border:none;
+    border-bottom: 1px solid #adadad;
+}
+
+input#email_suscribe {
+    width: 90%;
+    height: 35px;
+    text-align: center;
+    border:none;
+    border-bottom: 1px solid #adadad;
+}
+
+p#submit-suscribe {
+    text-align: center;
+    width: 37px;
+    margin-left: 40%;
+}
+
+p#submit-suscribe-ok{
+    text-align: center;
+    width: 37px;
+    margin-left: 40%;
+}
+
+input#submit_suscribe_btn {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+p#submit-suscribe-ok i {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+p#submit-suscribe-ok:hover i {
+    color: green;
+}
+
+input#submit {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+input#submit_suscribe {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+p#submit-suscribe  i {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+p#submit-suscribe:hover i {
+    color: green;
+}
+
+span.check_ok {
+    color: #4f432a;
+    font-size: 1.4em;
+    font-weight: 800;
+    position: absolute;
+    top: -50px;
+    background-color: #fff;
+    width: 90%;
+    height: 35px;
+    text-align: center;
+    border-bottom: 1px solid #adadad;
+}
+
+span.check_ko {
+    color: #0f0f0f;
+    font-size: 1.4em;
+    font-weight: 800;
+    position: absolute;
+    background-color: #fff;
+    width: 90%;
+    height: 35px;
+    text-align: center;
+    border-bottom: 1px solid #adadad;
+}
+
+.regex-mail {
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    height: auto;
+    top: 0;
+    left: -55%;
+    border: 1px solid #311c21;
+    color: red;
+    font-size: .7em;
+    text-align: center;
+    font-weight: 800;
+}
+
+.regex-mail-valide {
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    height: auto;
+    top: 0;
+    left: -55%;
+    border: 1px solid #311c21;
+    color: green;
+    font-size: .7em;
+    text-align: center;
+    font-weight: 800;
+}
+
+.regex-password {
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    height: auto;
+    top: 0;
+    left: -55%;
+    border: 1px solid #311c21;
+    color: red;
+    font-size: .7em;
+    text-align: left;
+    font-weight: 800;
+}
+
+/*FIN FORMULAIRE */
+
+/* FIN HEADER */
+section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+article {
+    display: flex;
+    height: 250px;
+    border-bottom: 3px solid #adadad;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.titre_chapitre {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.titre_chapitre a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+.titre_chapitre a:hover {
+    color: #311c21;
+}
+
+.date_pastille {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date_pastille_contain {
+    width: 60%;
+    height: 50%;
+    background: url("../images/image_cercle.jpg") no-repeat center;
+    background-size: contain;
+    border-right: 1px solid #adadad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-right: 35px;
+}
+
+.date_pastille_contain p {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    text-align: right;
+}
+
+.date_pastille_contain p:first-child {
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.chapitre-conteneur {
+    width: 80%;
+    margin-left: -30px;
+    height: 100%;
+}
+
+.contenu_chapitre {
+    text-align: justify;
+}
+
+article.article-contain {
+    height: auto;
+}
+
+.fa-commenting {
+    margin-right: 10px;
+}
+
+
+article.commentaires {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    position: relative;
+    height: auto;
+}
+
+.liste-commentaires {
+    display: flex;
+    border-bottom: 3px solid #adadad;
+}
+
+.liste-commentaires:last-of-type {
+    border: none;
+}
+
+.liste-commentaires p {
+    text-align: center;
+}
+
+.liste-commentaires p:last-of-type {
+    text-align: justify;
+}
+
+.numero-comment {
+    width: 5%;
+}
+
+.log-comment {
+    width: 15%;
+}
+
+.detail-comment {
+    width: 75%;
+    text-align: left !important;
+}
+
+.warning {
+    width: 5%;
+    cursor: pointer;
+}
+
+
+.warning:hover {
+    color: #311c21;
+    font-size: 1.5em;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.success-report {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 80px;
+    bottom: -100px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#post_commentaire {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #adadad;
+}
+
+#post_comm_sub {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #311c21;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+#post_comm_sub:hover {
+    color: #fff;
+    background-color: #311c21;
+    border: none;
+}
+
+#password_forget {
+    text-align: center;
+    width: 90%;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+
+#password_forget a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#password_forget a:hover {
+    color: #311c21;
+}
+
+/* ADMIN PAGE */
+
+.menus {
+    width: 20%;
+}
+
+.admin {
+    width: 80%;
+}
+
+.admin-chapters {
+    border-top: 3px solid #311c21;
+}
+
+.admin-chapters-post {
+    margin-bottom: 40px;
+}
+
+table th {
+    border-top: 1px solid #adadad !important;
+    border-bottom: 1px solid #adadad; !important;;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    height: 40px;
+}
+
+.admin-title-chapter-table {
+    width: 15%;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #adadad;
+}
+
+.admin-resume-chapter-table {
+    width: 55%;
+    text-align: justify;
+
+    border-bottom: 1px solid #adadad;
+}
+
+.admin-comm-table {
+    width: 10%;
+    text-align: center;
+    border-bottom: 1px solid #adadad;
+}
+
+.admin-report-table {
+    width: 10%;
+    text-align: center;
+    border-bottom: 1px solid #adadad;
+}
+
+.inter-chapter-table {
+    border-bottom: 1px solid #adadad;
+}
+
+.admin-chapter-update {
+    border-bottom: 1px solid #adadad;
+    text-align: center;
+    cursor: pointer;
+}
+
+.admin-chapter-update > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.admin-chapter-update a:hover {
+    color: red;
+}
+
+.admin-chapter-delete {
+    border-bottom: 1px solid #adadad;
+    cursor: pointer;
+    text-align: center;
+}
+
+.admin-chapter-delete > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.admin-chapter-delete a:hover {
+    color: red;
+}
+
+.admin-chapter-offline {
+    margin-top: 50px;
+    border-top: 3px solid #311c21;
+}
+
+.admin-user {
+    border-top: 3px solid #311c21;
+    margin-top: 50px;
+}
+
+.menus-btn {
+    display: block;
+    width: 80%;
+    height: 40px;
+    padding-top: 15px;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #311c21;
+    font-size: .8em;
+    text-decoration: none;
+    border-bottom: 1px solid #311c21;
+    border-right: 1px solid #311c21;
+    border-left: 1px solid #311c21;
+    transition: .4s;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.menus-btn:hover {
+    color: #fff;
+    background-color: #311c21;
+    border-top: 1px solid #311c21;
+    border-bottom: none;
+
+}
+
+
+/* POST */
+
+input#title {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #311c21;
+    margin-bottom: 40px;
+    font-size: 1.8em;
+}
+
+.check-online {
+    margin-left: 20%;
+}
+
+/* CHECKBOX BUTTON */
+.contain-checkbox {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.contain-checkbox > label {
+    width: 60px;
+    height: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+label > input {
+    display: none;
+}
+
+.slider {
+    background-color: #311c21;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+}
+
+.slider:after {
+    content: "NON";
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    font-size: .9em;
+    font-weight: 800;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 17px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 17px;
+}
+
+input:checked +.slider:after {
+    content: "OUI";
+    position: absolute;
+    left: 5px;
+    top:2px;
+    font-size: .9em;
+    font-weight: 800;
+
+}
+
+input:checked + .slider {
+    background-color: #4f432a;
+}
+
+input:checked +.slider:before {
+    transform: translateX(35px);
+}
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.check {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sub-btn {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #311c21;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-weight: 800;
+    color: #311c21;
+}
+
+.sub-btn:hover {
+    color: #fff;
+    background-color: #311c21;
+    border: none;
+}
+
+/* ADMIN COMMENTS */
+.admin-comments-table {
+    width:100%;
+}
+
+.admin-number-comment-table {
+    width: 20%;
+    text-align: center;
+}
+
+.admin-comment {
+    width: 60%;
+}
+
+.admin-comment-update {
+     width: 10%;
+     text-align: center;
+ }
+
+.admin-comment-update >a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.admin-comment-update >a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.admin-comment-delete {
+    width: 10%;
+    text-align: center;
+}
+
+.admin-comment-delete > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.admin-comment-delete > a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+input#email_forget {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #311c21;
+}
+
+#input_forget_pass {
+    position: relative;
+}
+
+span#forget_pass_hide {
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: .1s;
+    color: #311c21;
+}
+
+/* FOOTER */
+
+footer {
+    background: url("../images/image_footer.jpg") no-repeat center;
+    height: 500px;
+    min-width: 100%;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-contain {
+    width: 50%;
+    color: #fff;
+    display: flex;
+}
+
+.tree {
+    background: url("../images/sapin.png") no-repeat;
+    height: 30px;
+    width: 20px;
+    background-size: cover;
+}
+
+#author {
+    margin-left: 5px;
+}
+
+#author p {
+    text-transform: uppercase;
+}
+
+#author p:first-of-type {
+    font-weight: 800;
+}
+
+.recap-site {
+    width: 45%;
+    border-right:  1px solid #fff;
+    display: flex;
+}
+
+.social {
+    margin-left: 20px;
+    margin-top: 80px;
+    width: 55%;
+}
+
+.social p {
+    margin: 5px;
+}
+
+.social > p:first-of-type {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.social-logo {
+    width: 70%;
+    display: flex;
+}
+
+.social-logo p {
+    margin-left: 10px;
+}
+
+.social-logo p:first-of-type {
+    margin-left: 0;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact p:last-of-type {
+    margin-left: 20px;
+}
+
+.fa-envelope {
+    margin: 0;
+    margin-top: 3px;
+}
